@@ -171,7 +171,13 @@ header{
 .ba-half.after .tag{background:rgba(127,168,191,0.85); color:var(--ink);}
 .ba-caption{padding:16px 18px; font-size:13px; color:rgba(237,232,220,0.65);}
 .ba-caption b{color:var(--paper);}
-.ba-note{font-size:12px; color:var(--steel); margin-top:24px; font-family:var(--font-mono);}
+
+.gal-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:30px;}
+@media(max-width:860px){.gal-grid{grid-template-columns:repeat(2,1fr);}}
+.gal-grid figure{position:relative; border-radius:12px; overflow:hidden; border:1px solid var(--line);}
+.gal-grid img{width:100%; height:170px; object-fit:cover; transition:transform .4s ease;}
+.gal-grid figure:hover img{transform:scale(1.06);}
+.gal-grid figcaption{position:absolute; left:0; right:0; bottom:0; padding:8px 10px; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--paper); background:linear-gradient(transparent, rgba(11,23,32,.9));}
 
 .cert-box{max-width:420px;background:var(--navy-light);border:1px solid var(--line);border-radius:12px;padding:14px;}
 .cert-box img{border-radius:8px;width:100%;}
@@ -460,6 +466,28 @@ footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220
         </div>
         <div class="ba-caption"><b>Замена радиатора.</b> Старая батарея снята — установлена новая с терморегулятором и надёжными соединениями.</div>
       </div>
+      <div class="ba-card">
+        <div class="ba-split">
+          <div class="ba-half before"><span class="tag">До</span><img src="foto5.jpg" alt="Черновая разводка в санузле"></div>
+          <div class="ba-half after"><span class="tag">После</span><img src="foto8.jpg" alt="Готовая душевая"></div>
+        </div>
+        <div class="ba-caption"><b>Ванная комната.</b> От голых стен и черновой разводки — до готовой душевой зоны.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Галерея</div>
+      <h2>Работы в процессе и под ключ</h2>
+    </div>
+    <div class="gal-grid">
+      <figure><img src="foto1.jpg" alt="Монтаж водонагревателя"><figcaption>Водонагреватель</figcaption></figure>
+      <figure><img src="foto7.jpg" alt="Разводка труб у ванной"><figcaption>Разводка у ванной</figcaption></figure>
+      <figure><img src="foto10.jpg" alt="Прокладка наружного водопровода"><figcaption>Наружный водопровод</figcaption></figure>
+      <figure><img src="foto4.jpg" alt="Радиатор отопления с терморегулятором"><figcaption>Отопление</figcaption></figure>
     </div>
   </div>
 </section>
