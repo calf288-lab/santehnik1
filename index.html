@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Сантехник в Ростове-на-Дону — Сантехналад | Ремонт сантехники и отопления</title>
-<meta name="description" content="Сантехнические работы в Ростове-на-Дону: ремонт сантехники и отопления, замена и монтаж сантехнических устройств, насосы Sololift. Без предоплат, оплата по факту. Звоните: +7 923 809-88-32.">
+<meta name="description" content="Сантехнические работы в Ростове-на-Дону: ремонт сантехники и отопления, замена и монтаж сантехнических устройств, насосы Sololift. Без предоплат, оплата по фту. Обслуживание ТСЖ, УК и офисов. Звоните: +7 923 809-88-32.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://calf288-lab.github.io/santehnik1/">
 <meta property="og:title" content="Сантехналад — сантехник в Ростове-на-Дону">
-<meta property="og:description" content="Ремонт сантехники и отопления, монтаж сантехустройств, насосы Sololift. Без предоплат — оплата по факту.">
+<meta property="og:description" content="Ремонт сантехники и отопления, монтаж сантехустройств, насосы Sololift. Без предоплат — оплата по факту. Обслуживание ТСЖ, УК и офисов.">
 <meta property="og:image" content="https://calf288-lab.github.io/santehnik1/foto9.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
 <!-- СОЗДАЙ СЧЁТЧИК МЕТРИКИ ДЛЯ ВАЛЕРИЯ И ВСТАВЬ НОМЕР ВМЕСТО НУЛЕЙ -->
@@ -19,12 +19,14 @@
 <style>
 
 :root{
-  --navy:#0E2235;
-  --navy-light:#16324A;
-  --navy-lighter:#1E3F5C;
+  --navy:#0A3A45;
+  --navy-light:#0F4C5C;
+  --navy-lighter:#156070;
+  --teal:#2EC4B6;
+  --teal-soft:rgba(46,196,182,0.14);
   --copper:#C97C4D;
   --copper-bright:#E29A6B;
-  --steel:#7FA8BF;
+  --steel:#8FBFC9;
   --paper:#EDE8DC;
   --rust:#D6543A;
   --ink:#0B1720;
@@ -38,7 +40,10 @@
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
 body{
-  background:var(--navy);
+  background:
+    radial-gradient(1100px 520px at 85% -10%, rgba(46,196,182,0.10), transparent 60%),
+    radial-gradient(900px 480px at -10% 30%, rgba(21,96,112,0.35), transparent 60%),
+    var(--navy);
   color:var(--paper);
   font-family:var(--font-body);
   line-height:1.5;
@@ -69,15 +74,15 @@ h2{font-size:clamp(28px,4vw,44px); text-transform:uppercase; line-height:1.05;}
 .eyebrow{
   display:inline-flex; align-items:center; gap:8px;
   font-size:14px; letter-spacing:0.16em; text-transform:uppercase;
-  color:var(--copper-bright);
+  color:var(--teal);
 }
-.eyebrow::before{content:"⌁"; color:var(--rust);}
+.eyebrow::before{content:"⌁"; color:var(--teal);}
 p.lead{font-size:18px; color:rgba(237,232,220,0.75); max-width:60ch;}
 .mono{font-family:var(--font-mono);}
 
 header{
   position:sticky; top:0; z-index:100;
-  background:rgba(14,34,53,0.92);
+  background:rgba(10,58,69,0.92);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
 }
@@ -89,7 +94,7 @@ header{
   font-family:var(--font-display); font-size:22px; text-transform:uppercase;
   letter-spacing:0.03em; display:flex; align-items:center; gap:10px;
 }
-.logo .dot{width:8px;height:8px;background:var(--rust);border-radius:50%; box-shadow:0 0 0 4px rgba(214,84,58,0.2);}
+.logo .dot{width:8px;height:8px;background:var(--teal);border-radius:50%; box-shadow:0 0 0 4px rgba(46,196,182,0.2);}
 .header-actions{display:flex; gap:10px; align-items:center;}
 .btn{
   display:inline-flex; align-items:center; gap:8px;
@@ -102,6 +107,7 @@ header{
 .btn-primary{background:var(--rust); color:var(--paper);}
 .btn-secondary{background:transparent; border-color:var(--steel); color:var(--steel);}
 .btn-copper{background:var(--copper); color:var(--ink);}
+.btn-teal{background:var(--teal); color:var(--ink);}
 .btn-sm{padding:8px 14px; font-size:13px;}
 @media(max-width:640px){
   .header-actions .btn-secondary-label{display:none;}
@@ -113,7 +119,7 @@ header{
 .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;}}
 .hero h1{margin:14px 0 18px;}
-.hero h1 .accent{color:var(--copper);}
+.hero h1 .accent{color:var(--teal);}
 .hero-cta-row{display:flex; gap:14px; margin-top:28px; flex-wrap:wrap;}
 .urgency-badge{
   display:inline-flex; align-items:center; gap:10px;
@@ -121,6 +127,11 @@ header{
   border-radius:8px; font-size:14px; color:var(--copper-bright);
 }
 .urgency-badge b{color:var(--paper); font-family:var(--font-mono);}
+.teal-badge{
+  display:inline-flex; align-items:center; gap:10px;
+  margin-top:12px; padding:10px 16px; border:1px dashed var(--teal);
+  border-radius:8px; font-size:14px; color:var(--teal);
+}
 .pulse{width:9px;height:9px;border-radius:50%; background:var(--rust); animation:pulse 1.6s infinite;}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(214,84,58,.6);}70%{box-shadow:0 0 0 10px rgba(214,84,58,0);}100%{box-shadow:0 0 0 0 rgba(214,84,58,0);}}
 
@@ -140,11 +151,11 @@ header{
   background:var(--navy-light); border:1px solid var(--line); border-radius:12px;
   padding:24px; transition:border-color .2s ease, transform .2s ease;
 }
-.service-card:hover{border-color:var(--copper); transform:translateY(-3px);}
+.service-card:hover{border-color:var(--teal); transform:translateY(-3px);}
 .service-icon{
-  width:42px; height:42px; border-radius:9px; background:rgba(201,124,77,0.15);
+  width:42px; height:42px; border-radius:9px; background:var(--teal-soft);
   display:flex; align-items:center; justify-content:center; margin-bottom:16px;
-  color:var(--copper-bright);
+  color:var(--teal);
 }
 .service-card h3{font-family:var(--font-body); font-weight:700; font-size:17px; text-transform:none; margin-bottom:8px;}
 .service-card p{font-size:14px; color:rgba(237,232,220,0.65); margin-bottom:14px;}
@@ -154,9 +165,22 @@ header{
 .adv-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
 @media(max-width:860px){.adv-grid{grid-template-columns:repeat(2,1fr);}}
 .adv-item{background:var(--navy); padding:28px 22px;}
-.adv-item .num{font-family:var(--font-mono); color:var(--rust); font-size:13px; margin-bottom:10px;}
+.adv-item .num{font-family:var(--font-mono); color:var(--teal); font-size:13px; margin-bottom:10px;}
 .adv-item h3{font-family:var(--font-body); font-size:16px; font-weight:700; margin-bottom:8px;}
 .adv-item p{font-size:14px; color:rgba(237,232,220,0.65);}
+
+.org-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
+@media(max-width:700px){.org-grid{grid-template-columns:1fr;}}
+.org-card{background:var(--navy-light); border:1px solid var(--line); border-radius:12px; padding:24px;}
+.org-card .ico{width:42px;height:42px;border-radius:9px;background:var(--teal-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--teal);font-size:20px;}
+.org-card h3{font-family:var(--font-body); font-weight:700; font-size:16px; margin-bottom:8px;}
+.org-card p{font-size:14px; color:rgba(237,232,220,0.65);}
+.org-prices{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:26px;}
+@media(max-width:860px){.org-prices{grid-template-columns:1fr;}}
+.org-price{background:var(--navy); border:1px solid var(--line); border-radius:12px; padding:18px;}
+.org-price .t{font-size:13px; color:rgba(237,232,220,0.7); margin-bottom:6px;}
+.org-price .v{font-family:var(--font-mono); color:var(--teal); font-weight:700; font-size:18px;}
+.org-cta{display:flex; gap:14px; margin-top:26px; flex-wrap:wrap;}
 
 .ba-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
 @media(max-width:700px){.ba-grid{grid-template-columns:1fr;}}
@@ -168,7 +192,7 @@ header{
 .ba-half.after{background:linear-gradient(135deg,#1b3a3a,#123028);}
 .ba-half .tag{position:absolute; top:10px; left:10px; z-index:2; font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:.08em; padding:4px 8px; border-radius:4px;}
 .ba-half.before .tag{background:rgba(214,84,58,0.85); color:#fff;}
-.ba-half.after .tag{background:rgba(127,168,191,0.85); color:var(--ink);}
+.ba-half.after .tag{background:rgba(46,196,182,0.85); color:var(--ink);}
 .ba-caption{padding:16px 18px; font-size:13px; color:rgba(237,232,220,0.65);}
 .ba-caption b{color:var(--paper);}
 
@@ -188,7 +212,7 @@ header{
 .price-table th{font-family:var(--font-display); text-transform:uppercase; letter-spacing:.04em; color:var(--steel); font-weight:400; font-size:14px;}
 .price-table tr:last-child td{border-bottom:none;}
 .price-table td:last-child{text-align:right; font-family:var(--font-mono); color:var(--copper-bright); font-weight:700; white-space:nowrap;}
-.price-table tr:hover td{background:rgba(201,124,77,0.05);}
+.price-table tr:hover td{background:rgba(46,196,182,0.06);}
 .price-note{font-size:13px; color:rgba(237,232,220,0.55); margin-top:16px;}
 
 .process{position:relative;}
@@ -197,7 +221,7 @@ header{
 @media(max-width:860px){.process-grid{grid-template-columns:1fr; gap:36px;}}
 .process-step{text-align:left;}
 .step-num{
-  font-size:44px; color:transparent; -webkit-text-stroke:1.5px var(--copper);
+  font-size:44px; color:transparent; -webkit-text-stroke:1.5px var(--teal);
   line-height:1; margin-bottom:10px;
 }
 .process-step h3{font-family:var(--font-body); font-weight:700; font-size:16px; margin-bottom:6px;}
@@ -205,7 +229,7 @@ header{
 .pipe-svg{position:absolute; top:26px; left:0; width:100%; z-index:1;}
 @media(max-width:860px){.pipe-svg{display:none;}}
 .pipe-path{
-  stroke:var(--copper); stroke-width:2; fill:none; stroke-dasharray:6 6;
+  stroke:var(--teal); stroke-width:2; fill:none; stroke-dasharray:6 6;
   animation:flow 2.4s linear infinite;
 }
 @keyframes flow{to{stroke-dashoffset:-24;}}
@@ -234,7 +258,7 @@ header{
 .contact-form button{margin-top:4px;}
 .contact-note{font-size:12px; color:rgba(237,232,220,0.5); margin-top:10px;}
 .agree{display:flex; gap:10px; align-items:flex-start; font-size:12px; color:rgba(237,232,220,0.6); text-align:left;}
-.agree input{width:17px; height:17px; accent-color:var(--copper); flex-shrink:0;}
+.agree input{width:17px; height:17px; accent-color:var(--teal); flex-shrink:0;}
 .agree a{color:var(--steel); text-decoration:underline;}
 
 footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220,0.4); border-top:1px solid var(--line);}
@@ -246,7 +270,7 @@ footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220
 }
 .mobile-bar a{flex:1; text-align:center; padding:14px 0; font-weight:700; font-size:14px; background:var(--navy);}
 .mobile-bar a.call{background:var(--rust);}
-.mobile-bar a.wa{background:var(--copper); color:var(--ink);}
+.mobile-bar a.wa{background:var(--teal); color:var(--ink);}
 @media(max-width:640px){.mobile-bar{display:flex;} body{padding-bottom:52px;}}
 
 .section-head .eyebrow + h2{margin-top:8px;}
@@ -275,30 +299,31 @@ footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220
         <a href="#contact" class="btn btn-primary">🔧 Вызвать мастера</a>
         <a href="#prices" class="btn btn-secondary">Узнать стоимость</a>
       </div>
-      <div class="urgency-badge"><span class="pulse"></span> Без предоплат · <b>оплата по факту</b> · мастер Валерий</div>
+      <div class="urgency-badge"><span class="pulse"></span> Без предоплат · <b>оплата по факту</b> · мастер Валерий</div><br>
+      <div class="teal-badge">🏢 Работаем с юрлицами: договор, счёт, акты · обслуживание ТСЖ, УК и офисов</div>
     </div>
     <div class="schematic-card">
       <div class="cap">// Схема работы</div>
       <svg viewBox="0 0 320 260" width="100%" height="auto">
         <defs>
-          <marker id="dot" markerWidth="8" markerHeight="8" refX="4" refY="4"><circle cx="4" cy="4" r="3" fill="#C97C4D"/></marker>
+          <marker id="dot" markerWidth="8" markerHeight="8" refX="4" refY="4"><circle cx="4" cy="4" r="3" fill="#2EC4B6"/></marker>
         </defs>
-        <circle cx="40" cy="40" r="26" fill="none" stroke="#7FA8BF" stroke-width="1.5"/>
+        <circle cx="40" cy="40" r="26" fill="none" stroke="#8FBFC9" stroke-width="1.5"/>
         <text x="40" y="45" text-anchor="middle" fill="#EDE8DC" font-family="JetBrains Mono" font-size="11">SOS</text>
-        <path d="M64 40 H140" stroke="#C97C4D" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#dot)"/>
-        <rect x="150" y="20" width="110" height="40" rx="6" fill="none" stroke="#7FA8BF" stroke-width="1.5"/>
+        <path d="M64 40 H140" stroke="#2EC4B6" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#dot)"/>
+        <rect x="150" y="20" width="110" height="40" rx="6" fill="none" stroke="#8FBFC9" stroke-width="1.5"/>
         <text x="205" y="44" text-anchor="middle" fill="#EDE8DC" font-family="JetBrains Mono" font-size="10">ДИАГНОСТИКА</text>
-        <path d="M205 60 V100" stroke="#C97C4D" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#dot)"/>
-        <rect x="150" y="108" width="110" height="40" rx="6" fill="none" stroke="#7FA8BF" stroke-width="1.5"/>
+        <path d="M205 60 V100" stroke="#2EC4B6" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#dot)"/>
+        <rect x="150" y="108" width="110" height="40" rx="6" fill="none" stroke="#8FBFC9" stroke-width="1.5"/>
         <text x="205" y="132" text-anchor="middle" fill="#EDE8DC" font-family="JetBrains Mono" font-size="10">РЕМОНТ</text>
-        <path d="M150 128 H90 V168" stroke="#C97C4D" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#dot)"/>
+        <path d="M150 128 H90 V168" stroke="#2EC4B6" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#dot)"/>
         <circle cx="90" cy="196" r="26" fill="none" stroke="#D6543A" stroke-width="1.5"/>
         <text x="90" y="200" text-anchor="middle" fill="#EDE8DC" font-family="JetBrains Mono" font-size="10">ГОТОВО</text>
-        <text x="90" y="215" text-anchor="middle" fill="#7FA8BF" font-family="JetBrains Mono" font-size="9">оплата по факту</text>
+        <text x="90" y="215" text-anchor="middle" fill="#8FBFC9" font-family="JetBrains Mono" font-size="9">оплата по факту</text>
       </svg>
       <div style="display:flex; justify-content:space-between; margin-top:10px; font-family:'JetBrains Mono'; font-size:12px; color:var(--steel);">
-        <span>диагностика: <b style="color:var(--copper-bright);">на месте</b></span>
-        <span>оплата: <b style="color:var(--copper-bright);">по факту</b></span>
+        <span>диагностика: <b style="color:var(--teal);">на месте</b></span>
+        <span>оплата: <b style="color:var(--teal);">по факту</b></span>
       </div>
     </div>
   </div>
@@ -432,6 +457,57 @@ footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220
   </div>
 </section>
 
+<section class="section" id="orgs" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Организациям</div>
+      <h2>Аварийный сантехник для ТСЖ, УК и офисов</h2>
+      <p class="lead" style="margin-top:10px;">Возьмём на обслуживание 2-3 ваших дома или объекта: сантехнические вопросы закрываются одним звонком, без поиска подрядчиков в разгар аварии.</p>
+    </div>
+    <div class="org-grid">
+      <div class="org-card">
+        <div class="ico">🚨</div>
+        <h3>Аварийные заявки до 2 часов</h3>
+        <p>По договору выезжаем на аварийную заявку в течение двух часов, круглосуточно и в выходные: прорыв стояка и потоп не ждут рабочего дня.</p>
+      </div>
+      <div class="org-card">
+        <div class="ico">🗓</div>
+        <h3>Плановый обход раз в квартал</h3>
+        <p>Проверяем стояки, отопление, запорную арматуру и насосы, выдаём акт с фотоотчётом и списком того, что стоит предупредить до аварии.</p>
+      </div>
+      <div class="org-card">
+        <div class="ico">📄</div>
+        <h3>Договор и закрывающие для юрлица</h3>
+        <p>Один договор на все объекты, счёт и акты каждый месяц, оплата по безналу: бухгалтерия ТСЖ или УК получает полный пакет документов.</p>
+      </div>
+      <div class="org-card">
+        <div class="ico">🔧</div>
+        <h3>Закреплённый мастер</h3>
+        <p>За объектом закреплён один мастер, который знает его разводку, подвалы и доступы: не знакомимся с домом заново при каждой аварии.</p>
+      </div>
+    </div>
+    <div class="org-prices">
+      <div class="org-price">
+        <div class="t">Обслуживание объекта, месяц</div>
+        <div class="v">от 5 000 ₽ / дом</div>
+      </div>
+      <div class="org-price">
+        <div class="t">Аварийный выезд по договору</div>
+        <div class="v">0 ₽ в лимите часов</div>
+      </div>
+      <div class="org-price">
+        <div class="t">Разовый аудит сантехники и отопления</div>
+        <div class="v">от 3 000 ₽</div>
+      </div>
+    </div>
+    <p class="price-note">* Точная вилка зависит от количества домов и точек: считаем после бесплатного обследования объекта. Аудит зачтём в стоимость договора при заключении.</p>
+    <div class="org-cta">
+      <a href="https://wa.me/79238098832?text=Здравствуйте!%20Интересует%20обслуживание%20объекта%20(ТСЖ/УК/офис).%20Хотим%20получить%20предложение." class="btn btn-teal">🏢 Получить предложение для моего объекта</a>
+      <a href="tel:+79238098832" class="btn btn-secondary">Обсудить по телефону</a>
+    </div>
+  </div>
+</section>
+
 <section class="section" style="padding-top:0;">
   <div class="wrap">
     <div class="section-head">
@@ -518,6 +594,8 @@ footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220
         <tr><td>Подключение водонагревателя</td><td>от 2 800 ₽</td></tr>
         <tr><td>Подключение стиральной машины</td><td>от 1 500 ₽</td></tr>
         <tr><td>Замена радиатора отопления</td><td>от 3 500 ₽</td></tr>
+        <tr><td>Обслуживание объекта (ТСЖ/УК/офис), месяц</td><td>от 5 000 ₽</td></tr>
+        <tr><td>Аудит сантехники и отопления объекта (разово)</td><td>от 3 000 ₽</td></tr>
       </tbody>
     </table>
     <p class="price-note">* Цены указаны без учёта материалов. Итоговая смета — после осмотра объекта, до начала работ, без сюрпризов.</p>
@@ -576,7 +654,7 @@ footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220
 
       <div class="rev-card">
         <div class="rev-stars">★★★★★</div>
-        <div class="rev-text">Ставили инсталляцию для унитаза — до этого два других мастера отказались, сказали «нестандартная стена». Валерий разобрался, сделал крепление под задачу, всё держится идеально.</div>
+        <div class="rev-text">Ставили инсталляцию для унитаза — до этого два других мастера отказались, сказали «нестандартная стена». Валерий разобрался, сделал крепёж под задачу, всё держится идеально.</div>
         <div class="rev-author"><div class="rev-avatar">Д</div> Дмитрий, Советский район</div>
       </div>
 
@@ -595,11 +673,11 @@ footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220
     <div class="final blueprint">
       <div class="eyebrow">Связаться</div>
       <h2>Авария? Не ждите —<br>звоните прямо сейчас</h2>
-      <p class="lead" style="margin:0 auto;">Мастер Валерий на связи. Работаем по Ростову-на-Дону и области.</p>
+      <p class="lead" style="margin:0 auto;">Мастер Валерий на связи. Работаем по Ростову-на-Дону и области. Физлицам и организациям.</p>
 
       <div class="btn-row">
         <a href="tel:+79238098832" class="btn btn-primary">📞 Позвонить: +7 923 809-88-32</a>
-        <a href="https://wa.me/79238098832" class="btn btn-copper">WhatsApp</a>
+        <a href="https://wa.me/79238098832" class="btn btn-teal">WhatsApp</a>
       </div>
 
       <form class="contact-form" id="lead-form" novalidate>
@@ -615,7 +693,7 @@ footer{padding:32px 0; text-align:center; font-size:13px; color:rgba(237,232,220
 </section>
 
 <footer>
-  <div class="wrap">Сантехналад · Сантехнические работы в Ростове-на-Дону · © 2026</div>
+  <div class="wrap">Сантехналад · Сантехнические работы в Ростове-на-Дону · физлицам и организациям · © 2026</div>
 </footer>
 
 <div class="mobile-bar">
